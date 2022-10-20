@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    display: block;
+    width: 500px;
+    margin: 30px auto;
+    filter: drop-shadow(5px 5px 3px grey)
+}
+h1 {text-align: center;
+color: blueviolet; font-size: 3em;}
+h2 {text-align: center; font-size: 2em; color: blue;}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #000;
+    }
+    h1 {display: none;}
+    h2 {display: block;color: #fff;
+    text-align: center;
+margin-top: 30px;}
+    .img {display: none;}
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        background: #fff;
+    }
+    h1{
+        display: block;
+        text-align: center;
+    }
+    .img{
+        display: block;
+    }   
+}
